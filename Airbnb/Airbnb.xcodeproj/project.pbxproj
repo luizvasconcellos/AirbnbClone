@@ -13,6 +13,7 @@
 		F06D2C112C64CAB600519935 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F06D2C102C64CAB600519935 /* Preview Assets.xcassets */; };
 		F06D2C212C64E50E00519935 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C202C64E50E00519935 /* ExploreView.swift */; };
 		F06D2C232C64E5D900519935 /* ListingItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C222C64E5D900519935 /* ListingItemView.swift */; };
+		F06D2C252C64F71300519935 /* SearchAndFilterBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C242C64F71300519935 /* SearchAndFilterBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		F06D2C102C64CAB600519935 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F06D2C202C64E50E00519935 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
 		F06D2C222C64E5D900519935 /* ListingItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListingItemView.swift; sourceTree = "<group>"; };
+		F06D2C242C64F71300519935 /* SearchAndFilterBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAndFilterBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				F06D2C202C64E50E00519935 /* ExploreView.swift */,
+				F06D2C242C64F71300519935 /* SearchAndFilterBarView.swift */,
 			);
 			path = Explore;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F06D2C252C64F71300519935 /* SearchAndFilterBarView.swift in Sources */,
 				F06D2C232C64E5D900519935 /* ListingItemView.swift in Sources */,
 				F06D2C0C2C64CAB400519935 /* ContentView.swift in Sources */,
 				F06D2C212C64E50E00519935 /* ExploreView.swift in Sources */,
