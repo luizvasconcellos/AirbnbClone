@@ -16,7 +16,7 @@ struct SearchAndFilterBarView: View {
                     .font(.footnote)
                     .fontWeight(.semibold)
                 
-                Text("Anywhere - Any Week - Add guests")
+                Text("Anywere - Any Week - Add guests")
                     .font(.caption2)
                     .foregroundStyle(.gray)
             }
