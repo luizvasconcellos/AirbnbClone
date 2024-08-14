@@ -24,11 +24,6 @@ struct CollapsedPickerView: View {
             .fontWeight(.semibold)
             .font(.subheadline)
         }
-//        .padding()
-//        .background(.white)
-//        .clipShape(RoundedRectangle(cornerRadius: 12))
-//        .padding()
-//        .shadow(radius: 10)
     }
 }
 

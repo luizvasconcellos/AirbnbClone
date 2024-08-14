@@ -25,6 +25,8 @@
 		F06D2C3A2C668A6000519935 /* DestinationSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C392C668A6000519935 /* DestinationSearchView.swift */; };
 		F06D2C3E2C6B820E00519935 /* CollapsedPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C3D2C6B820E00519935 /* CollapsedPickerView.swift */; };
 		F06D2C402C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C3F2C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift */; };
+		F06D2C422C6CDF3A00519935 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C412C6CDF3A00519935 /* ProfileView.swift */; };
+		F06D2C442C6CE24600519935 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C432C6CE24600519935 /* ProfileOptionRowView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +49,8 @@
 		F06D2C392C668A6000519935 /* DestinationSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DestinationSearchView.swift; sourceTree = "<group>"; };
 		F06D2C3D2C6B820E00519935 /* CollapsedPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsedPickerView.swift; sourceTree = "<group>"; };
 		F06D2C3F2C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDestinationViewModifier.swift; sourceTree = "<group>"; };
+		F06D2C412C6CDF3A00519935 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		F06D2C432C6CE24600519935 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 		F06D2C1F2C64E46000519935 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				F06D2C412C6CDF3A00519935 /* ProfileView.swift */,
+				F06D2C432C6CE24600519935 /* ProfileOptionRowView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -268,6 +274,8 @@
 				F06D2C3A2C668A6000519935 /* DestinationSearchView.swift in Sources */,
 				F06D2C232C64E5D900519935 /* ListingItemView.swift in Sources */,
 				F06D2C2D2C65438200519935 /* RatingView.swift in Sources */,
+				F06D2C422C6CDF3A00519935 /* ProfileView.swift in Sources */,
+				F06D2C442C6CE24600519935 /* ProfileOptionRowView.swift in Sources */,
 				F06D2C402C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift in Sources */,
 				F06D2C0C2C64CAB400519935 /* ContentView.swift in Sources */,
 				F06D2C212C64E50E00519935 /* ExploreView.swift in Sources */,
