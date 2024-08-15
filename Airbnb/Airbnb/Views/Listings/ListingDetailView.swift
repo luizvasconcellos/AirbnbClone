@@ -69,8 +69,9 @@ struct ListingDetailView: View {
             ListingMapView()
             .padding()
         }
-        .padding(.bottom, 100)
+        .toolbar(.hidden, for: .tabBar)
         .ignoresSafeArea()
+        .padding(.bottom, 64)
         .overlay(alignment: .bottom) {
             VStack {
                 Divider()

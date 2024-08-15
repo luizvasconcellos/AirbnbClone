@@ -27,6 +27,9 @@
 		F06D2C402C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C3F2C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift */; };
 		F06D2C422C6CDF3A00519935 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C412C6CDF3A00519935 /* ProfileView.swift */; };
 		F06D2C442C6CE24600519935 /* ProfileOptionRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C432C6CE24600519935 /* ProfileOptionRowView.swift */; };
+		F06D2C462C6CE44000519935 /* WishlistView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C452C6CE44000519935 /* WishlistView.swift */; };
+		F06D2C482C6CE54900519935 /* LoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C472C6CE54900519935 /* LoginButton.swift */; };
+		F06D2C4B2C6CE73100519935 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F06D2C4A2C6CE73100519935 /* MainTabView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +54,9 @@
 		F06D2C3F2C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsibleDestinationViewModifier.swift; sourceTree = "<group>"; };
 		F06D2C412C6CDF3A00519935 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		F06D2C432C6CE24600519935 /* ProfileOptionRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionRowView.swift; sourceTree = "<group>"; };
+		F06D2C452C6CE44000519935 /* WishlistView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishlistView.swift; sourceTree = "<group>"; };
+		F06D2C472C6CE54900519935 /* LoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginButton.swift; sourceTree = "<group>"; };
+		F06D2C4A2C6CE73100519935 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +91,6 @@
 			children = (
 				F06D2C192C64E38200519935 /* App */,
 				F06D2C0D2C64CAB600519935 /* Assets.xcassets */,
-				F06D2C0B2C64CAB400519935 /* ContentView.swift */,
 				F06D2C182C64E37A00519935 /* Model */,
 				F06D2C0F2C64CAB600519935 /* Preview Content */,
 				F06D2C1A2C64E3C700519935 /* Views */,
@@ -119,6 +124,8 @@
 		F06D2C1A2C64E3C700519935 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				F06D2C0B2C64CAB400519935 /* ContentView.swift */,
+				F06D2C492C6CE71600519935 /* TabBar */,
 				F06D2C272C64F9D200519935 /* Components */,
 				F06D2C1C2C64E3E400519935 /* Explore */,
 				F06D2C1B2C64E3DF00519935 /* Home */,
@@ -159,6 +166,7 @@
 		F06D2C1E2C64E45700519935 /* Wishlists */ = {
 			isa = PBXGroup;
 			children = (
+				F06D2C452C6CE44000519935 /* WishlistView.swift */,
 			);
 			path = Wishlists;
 			sourceTree = "<group>";
@@ -179,6 +187,7 @@
 				F06D2C2C2C65438200519935 /* RatingView.swift */,
 				F06D2C3D2C6B820E00519935 /* CollapsedPickerView.swift */,
 				F06D2C3F2C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift */,
+				F06D2C472C6CE54900519935 /* LoginButton.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -193,6 +202,14 @@
 				F06D2C372C6686BB00519935 /* ListingMapView.swift */,
 			);
 			path = Components;
+			sourceTree = "<group>";
+		};
+		F06D2C492C6CE71600519935 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				F06D2C4A2C6CE73100519935 /* MainTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -270,10 +287,13 @@
 				F06D2C3E2C6B820E00519935 /* CollapsedPickerView.swift in Sources */,
 				F06D2C312C6678E300519935 /* ListingAmenitiesListView.swift in Sources */,
 				F06D2C2B2C653B1200519935 /* ListingImageCarouselView.swift in Sources */,
+				F06D2C482C6CE54900519935 /* LoginButton.swift in Sources */,
 				F06D2C252C64F71300519935 /* SearchAndFilterBarView.swift in Sources */,
 				F06D2C3A2C668A6000519935 /* DestinationSearchView.swift in Sources */,
+				F06D2C462C6CE44000519935 /* WishlistView.swift in Sources */,
 				F06D2C232C64E5D900519935 /* ListingItemView.swift in Sources */,
 				F06D2C2D2C65438200519935 /* RatingView.swift in Sources */,
+				F06D2C4B2C6CE73100519935 /* MainTabView.swift in Sources */,
 				F06D2C422C6CDF3A00519935 /* ProfileView.swift in Sources */,
 				F06D2C442C6CE24600519935 /* ProfileOptionRowView.swift in Sources */,
 				F06D2C402C6CD9F700519935 /* CollapsibleDestinationViewModifier.swift in Sources */,
