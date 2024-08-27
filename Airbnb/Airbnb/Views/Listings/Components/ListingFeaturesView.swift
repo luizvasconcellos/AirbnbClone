@@ -8,18 +8,21 @@
 import SwiftUI
 
 struct ListingFeaturesView: View {
+    
+    let features: [ListingFeatures]
+    
     var body: some View {
         VStack(alignment: .leading, spacing: 16) {
-            ForEach(0 ..< 2) { feature in
+            ForEach(features) { feature in
                 HStack(spacing: 12) {
-                    Image(systemName: "door.left.hand.open")
+                    Image(systemName: feature.imageName)
                     
                     VStack(alignment: .leading) {
-                        Text("Self check-in")
+                        Text(feature.title)
                             .font(.footnote)
                             .fontWeight(.semibold)
                         
-                        Text("Check yourself in with the keypad.")
+                        Text(feature.subTitle)
                             .font(.caption)
                             .foregroundStyle(.gray)
                     }
@@ -31,5 +34,5 @@ struct ListingFeaturesView: View {
 }
 
 #Preview {
-    ListingFeaturesView()
+    ListingFeaturesView(features: DeveloperPreview.shared.listings[0].features)
 }

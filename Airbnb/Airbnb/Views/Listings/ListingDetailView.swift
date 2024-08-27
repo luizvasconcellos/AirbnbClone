@@ -10,10 +10,12 @@ import SwiftUI
 struct ListingDetailView: View {
     
     @Environment(\.dismiss) var dismiss
+    let listing: Listing
+    
     var body: some View {
         ScrollView {
             ZStack(alignment: .topLeading) {
-                ListingImageCarouselView()
+                ListingImageCarouselView(listingImages: listing.imageURLs)
                     .frame(height: 320)
                 
                 Button {
@@ -31,13 +33,13 @@ struct ListingDetailView: View {
             }
             
             VStack(alignment: .leading, spacing: 8) {
-                Text("Cozy Home")
+                Text(listing.title)
                     .font(.title)
                     .fontWeight(.semibold)
                 
                 VStack(alignment: .leading) {
-                    RatingView(rating: 4.85, reviewsCount: 17)
-                    Text("Porto, Portugal")
+                    RatingView(rating: listing.rating, reviewsCount: listing.numberOfReviews)
+                    Text("\(listing.city), \(listing.state)")
                         .font(.caption)
                 }
             }
@@ -46,27 +48,27 @@ struct ListingDetailView: View {
             
             Divider()
             
-            HostProfileView()
+            HostProfileView(listing: listing)
                 .padding()
             
             Divider()
             
-            ListingFeaturesView()
+            ListingFeaturesView(features: listing.features)
                 .padding()
             
             Divider()
             
-            ListingBedroomsView()
+            ListingBedroomsView(bedroomsCount: listing.numberOfBedrooms)
                 .padding()
             
             Divider()
             
-            ListingAmenitiesListView()
+            ListingAmenitiesListView(amenities: listing.amenities)
                 .padding()
             
             Divider()
             
-            ListingMapView()
+            ListingMapView(listing: listing)
             .padding()
         }
         .toolbar(.hidden, for: .tabBar)
@@ -79,7 +81,7 @@ struct ListingDetailView: View {
                 
                 HStack(alignment: .top) {
                     VStack(alignment: .leading) {
-                        Text("€345")
+                        Text("€\(listing.pricePerNight)")
                             .font(.subheadline)
                             .fontWeight(.semibold)
                         
@@ -113,5 +115,5 @@ struct ListingDetailView: View {
 }
 
 #Preview {
-    ListingDetailView()
+    ListingDetailView(listing: DeveloperPreview.shared.listings[0])
 }

@@ -18,9 +18,15 @@ struct RatingView: View {
                 .fontWeight(.semibold)
             if let reviewsCount = reviewsCount {
                 Text(" - ")
-                Text("\(String(reviewsCount)) reviews")
-                    .underline()
-                    .fontWeight(.semibold)
+                if reviewsCount == 1 {
+                    Text("\(String(reviewsCount)) review")
+                        .underline()
+                        .fontWeight(.semibold)
+                } else {
+                    Text("\(reviewsCount == 0 ? "no" : String(reviewsCount)) reviews")
+                        .underline()
+                        .fontWeight(.semibold)
+                }
             }
         }
         .font(.caption)
@@ -30,6 +36,8 @@ struct RatingView: View {
 #Preview {
     Group(content: {
         RatingView(rating: 4.85, reviewsCount: 17)
+        RatingView(rating: 4.85, reviewsCount: 1)
+        RatingView(rating: 0.0, reviewsCount: 0)
         RatingView(rating: 4.86)
     })
 }

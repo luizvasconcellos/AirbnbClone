@@ -20,6 +20,7 @@ struct WishlistView: View {
                 }
                 
                 LoginButton()
+                
                 Spacer()
             }
             .padding()
